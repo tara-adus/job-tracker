@@ -4,10 +4,10 @@
     <script type="text/javascript" src="js/appmanager.js"></script>
     <link rel="stylesheet" href="styles/style1.css">
     <meta charset="utf-8">
-    <title>Currency Tracker</title>   
+    <title>Job Application Tracker</title>   
   </head>
   <body>
-    <div class="header"><h1>My Job Tracker</h1></div>
+    <div class="header"><h1>My Job Application Tracker</h1></div>
 
     <!-- <form>
         <label for="cname">Company name:</label><br>
@@ -29,7 +29,6 @@
 
       <div class="row">
         <div class="column side"></div>
-        
         <div class="column middle">
             <!-- <form action="http://127.0.0.1:3000/applications/" method="POST"> -->
             <form>
@@ -43,18 +42,19 @@
                 <input type="text" id="applicationDate" name="applicationDate"><br><br>
                 <label for="jobLink">Link to Job</label>
                 <input type="text" id="jobLink" name="jobLink"><br><br>
-                <input type="button" value="Add Job" onclick="addJobApplication()">
+                <input type="button" value="Add Job Application" onclick="addJobApplication()">
             </form>
         </div>
-        
         <div class="column side"></div>
       </div>
-
+      <div class="centeredrow"><input type="button" value="Get Job Applications" onclick="getJobApplications()"></div>
       <div class="row">
         <div class="column side"></div>
         <div class="column middle">
-            
-
+            <table>
+                <thead><tr><th>Job ID</th><th>Company Name</th></tr></thead>
+                <tbody id="data-output"></tbody>
+            </table>
         </div>
         <div class="column side"></div>
       </div>

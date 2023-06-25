@@ -58,6 +58,13 @@ p {
   }
 }
 
+.centeredrow {
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+}
+
 /* Left and right column */
 .column.side {
   width: 25%;
@@ -66,7 +73,7 @@ p {
 /* Middle column */
 .column.middle {
   width: 50%;
-   border-style: double;
+  border-style: double;
   border-width: 15px;
   margin: 70px;
   padding: 70px;
