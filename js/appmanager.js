@@ -59,7 +59,7 @@ function getJobApplications(){
 }
 
 function addJobApplication(){
-    alert("addJob has been invoked!")
+    // alert("addJob has been invoked!")
 
     let jobId = document.getElementById("jobId").value
     let cname = document.getElementById("cname").value
@@ -79,7 +79,7 @@ function addJobApplication(){
     xhr.onload = function() {
         //let jsonresponse = JSON.parse(xhr.response)
         //alert('sunrise:'+ xhr.status+ jsonresponse.results.sunrise)
-        alert(`Received response: ${xhr.status} ${xhr.response}`);
+        alert(`Job Application bas been successfully added to the database: ${xhr.status}`);
         console.log('xhr.response='+xhr.response)
         //document.getElementById("blah").innerHTML = this.response;
     };
